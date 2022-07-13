@@ -1,0 +1,535 @@
+nav {
+  margin-right: 100px;
+  display: grid;
+  margin-inline-end: auto; }
+  nav img {
+    width: 116px; }
+  nav ul {
+    text-align: end;
+    margin-top: -83px;
+    color: #000;
+    padding-right: 100px; }
+    nav ul .nav-link {
+      font-weight: 600;
+      font-size: 25px; }
+    nav ul a {
+      text-decoration: none;
+      color: #000; }
+
+header {
+  width: 100%;
+  height: 1024px;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  header .title {
+    background-image: url(../assets/Rectangle-5.webp);
+    width: 100%;
+    height: 1024px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 100px;
+    position: absolute;
+    z-index: 10;
+    top: 0%; }
+  header h1 {
+    margin-top: 250px;
+    font-weight: 400;
+    font-size: 128px;
+    font-family: 'Anton';
+    animation: fadeInDownBig;
+    animation-duration: 1s; }
+  header h2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    margin-top: 20px;
+    animation: fadeInDownBig;
+    animation-duration: 1.2s; }
+  header p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 34px;
+    width: 900px;
+    margin-top: 20px;
+    animation: fadeInDownBig;
+    animation-duration: 1.5s; }
+  header .carousel button {
+    display: none; }
+
+main section.first h3 {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  text-align: center;
+  margin-top: 144px; }
+
+main section.first .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  justify-items: center;
+  margin-top: 125px; }
+  main section.first .cards .card {
+    width: 300px;
+    height: 350px;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    align-items: center;
+    border: none; }
+    main section.first .cards .card p {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px; }
+  main section.first .cards .banco p {
+    width: 166px;
+    margin-top: 41px;
+    text-align: center;
+    color: #7429FF; }
+  main section.first .cards .banco img {
+    width: 160px;
+    height: auto;
+    margin-top: 43px; }
+  main section.first .cards .money img {
+    width: 247px;
+    margin-top: 10px; }
+  main section.first .cards .money p {
+    margin-top: -14px;
+    color: #B1BBFE; }
+  main section.first .cards .mercado p {
+    margin-top: 67px;
+    color: #C998EF; }
+  main section.first .cards .mercado img {
+    width: 160px;
+    height: auto;
+    margin-top: 66px; }
+
+main .linea {
+  width: 940px;
+  height: 3px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  background-color: #7429FF;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto; }
+
+main section.second {
+  padding-bottom: 150px; }
+  main section.second h3 {
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    text-align: center; }
+  main section.second .contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin-top: 10em; }
+    main section.second .contenedor img {
+      width: 500px;
+      height: 500px;
+      border-radius: 50px; }
+    main section.second .contenedor ul li {
+      list-style-image: url(../assets/ant-design_check-circle-filled.png);
+      margin-top: 2em; }
+      main section.second .contenedor ul li h6 {
+        font-weight: 700;
+        font-size: 24px;
+        color: #2D3748; }
+      main section.second .contenedor ul li p {
+        font-weight: 400;
+        font-size: 16px;
+        color: #4A5568; }
+        main section.second .contenedor ul li p a {
+          text-decoration: none;
+          color: #000;
+          font-weight: 700; }
+
+main section.third {
+  background-color: #fff;
+  padding-bottom: 150px; }
+  main section.third h3 {
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 100px; }
+  main section.third .linea {
+    margin-top: 6em; }
+  main section.third p {
+    font-weight: 400;
+    font-size: 37px;
+    width: 81%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  main section.third .carrusel {
+    margin-top: 150px; }
+    main section.third .carrusel span {
+      z-index: 10;
+      position: absolute;
+      margin-top: 9em;
+      margin-left: 5em; }
+      main section.third .carrusel span .botonSlide {
+        background-image: url(../assets/button.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 60px; }
+        main section.third .carrusel span .botonSlide img {
+          width: 25px;
+          margin-left: 0.5em; }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-250px * 7)); } }
+    main section.third .carrusel .slider {
+      background: white;
+      height: 350px;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+      max-width: 1400px; }
+    main section.third .carrusel .slider::before,
+    main section.third .carrusel .slider::after {
+      background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: 200px;
+      z-index: 2; }
+    main section.third .carrusel .slider::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg); }
+    main section.third .carrusel .slider::before {
+      left: 0;
+      top: 0; }
+    main section.third .carrusel .slider .slide-track {
+      animation: scroll 30s linear infinite;
+      display: flex;
+      width: calc(250px * 14); }
+    main section.third .carrusel .slider .slide {
+      height: 350px;
+      width: fit-content;
+      margin-right: 2px;
+      margin-left: 2px; }
+
+footer .contenedor {
+  background-color: #C998EF;
+  height: 280px;
+  padding-top: 65px; }
+  footer .contenedor ul li {
+    list-style-type: none; }
+    footer .contenedor ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 400;
+      font-size: 25px;
+      margin-left: 1em; }
+
+footer .marca {
+  background-color: #B1BBFE;
+  height: 60px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 18px; }
+  footer .marca a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800; }
+
+body {
+  background-color: #B1BBFE0F; }
+
+.boton {
+  background-image: url(../assets/button.png);
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 93%;
+  position: fixed;
+  top: 75%;
+  z-index: 10; }
+
+@media screen and (max-width: 768px) {
+  .boton {
+    background-image: url(../assets/button.png);
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 85%;
+    position: fixed;
+    top: 70%;
+    z-index: 10;
+    width: 40px; }
+    .boton img {
+      width: 40px; }
+  nav {
+    margin-left: 0;
+    display: grid;
+    margin-inline-end: auto; }
+    nav img {
+      width: 50px; }
+    nav ul {
+      text-align: end;
+      margin-top: -50px;
+      color: #000;
+      padding-right: 10px;
+      display: block !important; }
+      nav ul .nav-link {
+        font-weight: 600;
+        font-size: 12px;
+        padding: 0.4em 0; }
+      nav ul a {
+        text-decoration: none;
+        color: #000; }
+  header {
+    width: 100%;
+    height: 70%;
+    background-size: contain;
+    background-repeat: no-repeat; }
+    header .carousel img {
+      height: 300px;
+      width: 150%; }
+    header .title {
+      background-image: url(../assets/Rectangle-5.webp);
+      width: 100%;
+      height: 53%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-left: 25px;
+      position: absolute;
+      z-index: 10;
+      top: 0%;
+      overflow-x: hidden; }
+    header h1 {
+      margin-top: 3vw;
+      font-weight: 400;
+      font-size: 30px;
+      font-family: 'Anton';
+      position: absolute; }
+    header h2 {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      margin-top: 3.5em;
+      position: absolute; }
+    header p {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 15px;
+      width: 95%;
+      margin-top: 7.5em;
+      margin-right: 20px;
+      padding-right: 25px;
+      position: absolute; }
+    header .carousel button {
+      display: none; }
+  main section.first h3 {
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px; }
+  main section.first .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+    margin-top: 50px; }
+    main section.first .cards .card {
+      width: 100px;
+      height: 150px;
+      background: #FFFFFF;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      align-items: center;
+      border: none; }
+      main section.first .cards .card p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px; }
+    main section.first .cards .banco p {
+      width: 80px;
+      margin-top: 15px;
+      text-align: center;
+      color: #7429FF; }
+    main section.first .cards .banco img {
+      width: 57px;
+      height: auto;
+      margin-top: 30px; }
+    main section.first .cards .money img {
+      width: 100px;
+      margin-top: 10px; }
+    main section.first .cards .money p {
+      margin-top: -10px;
+      color: #B1BBFE;
+      width: 84%;
+      text-align: center; }
+    main section.first .cards .mercado p {
+      margin-top: 32px;
+      color: #C998EF; }
+    main section.first .cards .mercado img {
+      width: 70px;
+      height: auto;
+      margin-top: 30px; }
+  main .linea {
+    max-width: 300px;
+    height: 3px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-color: #7429FF;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto; }
+  main section.second {
+    padding-bottom: 50px;
+    margin-top: 0; }
+    main section.second h3 {
+      font-family: 'Anton';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      text-align: center; }
+    main section.second .contenedor {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+      margin-top: 5em; }
+      main section.second .contenedor img {
+        display: none; }
+      main section.second .contenedor ul {
+        margin-left: 25px;
+        margin-right: 25px; }
+        main section.second .contenedor ul li::marker {
+          margin-top: 1em; }
+        main section.second .contenedor ul li {
+          list-style-image: url(../assets/ant-design_check-circle-filled.png);
+          margin-top: 0.5em; }
+          main section.second .contenedor ul li h6 {
+            font-weight: 700;
+            font-size: 15px;
+            color: #2D3748; }
+          main section.second .contenedor ul li p {
+            font-weight: 400;
+            font-size: 12px;
+            color: #4A5568; }
+  main section.third {
+    background-color: #fff;
+    padding-bottom: 25px; }
+    main section.third h3 {
+      font-family: 'Anton';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      text-align: center;
+      padding-top: 50px; }
+    main section.third .linea {
+      margin-top: 2em; }
+    main section.third p {
+      font-weight: 400;
+      font-size: 15px;
+      width: 81%;
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center; }
+    main section.third .carrusel {
+      margin-top: 50px; }
+      main section.third .carrusel span {
+        z-index: 10;
+        position: absolute;
+        margin-top: 3em;
+        margin-left: 1em; }
+        main section.third .carrusel span .botonSlide {
+          background-image: url(../assets/button.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 30px; }
+          main section.third .carrusel span .botonSlide img {
+            width: 10px;
+            margin-left: 0.5em;
+            margin-top: -8px; }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); }
+    100% {
+      transform: translateX(calc(-250px * 7)); } }
+      main section.third .carrusel .slider {
+        background: white;
+        height: 200px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        max-width: 1400px; }
+      main section.third .carrusel .slider::before,
+      main section.third .carrusel .slider::after {
+        background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 40%);
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: 200px;
+        z-index: 2; }
+      main section.third .carrusel .slider::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg); }
+      main section.third .carrusel .slider::before {
+        left: 0;
+        top: 0; }
+      main section.third .carrusel .slider .slide-track {
+        animation: scroll 30s linear infinite;
+        display: flex;
+        width: calc(250px * 14); }
+      main section.third .carrusel .slider .slide {
+        height: 50px;
+        width: fit-content;
+        margin-right: 2px;
+        margin-left: 2px; }
+        main section.third .carrusel .slider .slide img {
+          height: 150px; }
+  footer .contenedor {
+    background-color: #C998EF;
+    height: 150px;
+    padding-top: 5px; }
+    footer .contenedor ul li {
+      list-style-type: none;
+      margin-top: 0.5em; }
+      footer .contenedor ul li img {
+        width: 15px; }
+      footer .contenedor ul li a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 400;
+        font-size: 12px;
+        margin-left: 1em; }
+  footer .marca {
+    background-color: #B1BBFE;
+    height: 60px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 18px; }
+    footer .marca a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 800; } }
